@@ -1,0 +1,143 @@
+#banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: min(545px, 80vh);
+  background-image: url("../img/Banner\ 01\ -\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -68px;
+  padding-top: 88px;
+  transition: all 0.5s ease-in-out;
+}
+
+.description {
+  height: auto;
+  min-height: min(452px, 60vh);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1D0605E5;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.description h1 {
+  font-size: clamp(40px, 8vw, 77px);
+  line-height: 1.1;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.description button {
+  background-color: #F43127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  max-width: 200px;
+  height: 52px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulseButton 2s infinite;
+}
+
+.description button:hover {
+  background-color: #d82a21;
+  transform: scale(1.05);
+}
+
+.description p {
+  margin: 10px 0;
+  font-size: clamp(16px, 2vw, 22px);
+  animation: fadeIn 1s ease-in-out 0.3s;
+  animation-fill-mode: both;
+}
+
+.quality {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px #B29B8480;
+  border-radius: 10px;
+  padding: 30px;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slideInUp 0.8s ease-out;
+}
+
+.quality hr {
+  height: 80px;
+  border: none;
+  width: 1px;
+  background-color: #492E1526;
+  margin: 0 10px;
+}
+
+.vantagens {
+  flex: 1;
+  min-width: 200px;
+  height: auto;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.vantagens:hover {
+  transform: translateY(-5px);
+}
+
+.vantagens img {
+  background-color: #FAE2CB;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.vantagens:hover img {
+  background-color: #f8d4b0;
+  transform: scale(1.1);
+}
+
+
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

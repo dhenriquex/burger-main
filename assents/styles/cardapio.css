@@ -1,0 +1,100 @@
+.cardapio {
+  display: flex;
+  margin-top: 40px;
+  width: 100vw;
+  height: 450px;
+  font-family: "Bungee", cursive;
+  overflow: hidden;
+}
+.cardapio-conteudo {
+  flex: 1;
+  background-image: url("../img/Rectangle\ 610\(1\).png");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contudo {
+  max-width: 400px;
+  transform: translateX(30%);
+  h2 {
+    font-weight: 42px;
+    line-height: 45px;
+    color: #3b200b;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+  }
+  button {
+    background-color: #f43127;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+.cardapio-info {
+  display: flex;
+  width: 100%;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #3b200b;
+  padding: 25px 20px;
+  h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+    color: #f59a1b;
+  }
+  .burger-cardapio {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    /* Remove o pseudo-elemento anterior */
+
+    h3 {
+      font-weight: 500;
+      color: #fae4d0;
+      font-size: 20px;
+      line-height: 22px;
+      background-color: #3b200b;
+
+      /* Adicione isso */
+      position: relative;
+      z-index: 1; /* Coloca o texto acima da linha */
+    }
+
+    /* Cria a linha de pontos como fundo */
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80%;
+      transform: translateY(-50%);
+      border-bottom: 2px dotted #fae4d0;
+      z-index: 0; /* Envia a linha para trás */
+    }
+  }
+  p {
+    margin-top: 10px;
+    max-width: 500px;
+    color: #fae4d0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

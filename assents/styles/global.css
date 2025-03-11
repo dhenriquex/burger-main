@@ -1,0 +1,15 @@
+@import url("./header.css");
+@import url("./banner.css");
+@import url("./footer.css");
+@import url("./oferta.css");
+@import url("./cardapio.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #635352;
+    font-family: 'Lato', sans-serif;
+     background-color: #FAF3F2;
+}

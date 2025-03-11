@@ -1,0 +1,72 @@
+header {
+
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 68px;
+  background-color: #3B200B0D;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px 0;
+  font-weight: 400;
+  z-index: 1000;
+}
+
+.nav-bar {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 35px;
+  color: #1d0605e5;
+  font-size: 33px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #635352;
+  padding: 0 20px;
+}
+
+.socialMidias {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.socialMidias img {
+  height: 20px;
+  width: auto;
+  filter: invert(100%);
+}
+
+.socialMidias hr {
+  height: 30px;
+  width: 1px;
+  background-color: #B50B04;
+  border: none;
+}
+
+.whatshap {
+  display: flex;
+  background-color: #F59A1B;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 4px 16px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #34201F;
+}
+
+.whatshap img {
+  filter: none;
+}
