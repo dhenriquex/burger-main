@@ -1,0 +1,43 @@
+.publicacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 40px 0;
+    font-family:"Bungee", cursive;
+    h3{
+        font-size: 32px;
+        line-height: 35px;
+        color: #1D0605E5;
+        font-weight: bold;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #1D0605B0;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+    }
+}
+.pub-img{
+    display: flex;
+    img{
+        width: 270px;
+        height: 218px;
+    }
+}
+.publicacoes::after{
+    content: "#EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER. #EMPIREBURGER";
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    background-color: #F59A1B;
+    padding: 10px 0;
+    color: #1D0605B0;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 500;
+
+}
